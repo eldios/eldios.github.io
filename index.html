@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eldios - DevOps Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: 'Courier New', monospace;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
             background: black;
-            color: #00ff00;
-            overflow: hidden;
+            color: #c9d1d9;
+            line-height: 1.5;
         }
 
         #matrix-bg {
@@ -22,80 +23,107 @@
             width: 100%;
             height: 100%;
             z-index: -1;
+            opacity: 0.15; /* More subtle matrix effect */
         }
 
         .container {
             position: relative;
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            background-color: rgba(13, 17, 23, 0.95);
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
-        .header {
-            text-align: center;
-            margin-bottom: 2rem;
+        .markdown-body {
+            background-color: transparent !important;
+            color: #c9d1d9 !important;
         }
 
-        h1 {
-            font-size: 3rem;
-            text-shadow: 0 0 10px #00ff00;
+        .markdown-body img {
+            background-color: transparent !important;
+            max-width: 100%;
         }
 
-        .social-links {
-            margin: 1rem 0;
+        /* Dark theme overrides for markdown */
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            color: #e6edf3 !important;
+            border-bottom-color: #30363d !important;
         }
 
-        .social-links a {
-            color: #00ff00;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.2rem;
+        .markdown-body a {
+            color: #58a6ff !important;
         }
 
-        .social-links a:hover {
-            text-shadow: 0 0 10px #00ff00;
+        .markdown-body hr {
+            background-color: #30363d !important;
         }
 
-        .metrics {
-            width: 100%;
-            max-width: 850px;
-            margin: 2rem 0;
+        @media (max-width: 767px) {
+            .container {
+                padding: 15px;
+            }
         }
 
-        .metrics img {
-            width: 100%;
-            height: auto;
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0d1117;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #30363d;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #40464d;
         }
     </style>
 </head>
 <body>
     <canvas id="matrix-bg"></canvas>
     <div class="container">
-        <div class="header">
-            <h1>eldios</h1>
-            <div class="social-links">
-                <a href="https://github.com/eldios" target="_blank">GitHub: @eldios</a>
-                <a href="https://twitter.com/eldios" target="_blank">Twitter: @eldios</a>
-            </div>
-        </div>
-        <div class="metrics">
-            <img src="https://raw.githubusercontent.com/eldios/eldios/main/github-metrics.svg" 
-                 alt="GitHub Metrics" 
-                 loading="lazy">
-        </div>
+        <article class="markdown-body">
+            <!-- Your README.md content -->
+            <h1 align="center">Hi 👋, I'm Lele 'eldios'</h1>
+            <h3 align="center">A passionate DevOps Engineer with a crypto twist, remotely from Italy</h3>
+
+            <p align="left"> <img src="https://komarev.com/ghpvc/?username=eldios&label=Profile%20views&color=0e75b6&style=flat" alt="eldios" /> </p>
+
+            <p align="left"> <a href="https://twitter.com/eldios" target="blank"><img src="https://img.shields.io/twitter/follow/eldios?logo=twitter&style=for-the-badge" alt="eldios" /></a> </p>
+
+            <h3 align="left">Connect with me:</h3>
+            <p align="left">
+            <a href="https://twitter.com/eldios" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="eldios" height="30" width="40" /></a>
+            </p>
+
+            <h3 align="left">Languages and Tools:</h3>
+            <p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://grafana.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="rust" width="40" height="40"/> </a> <a href="https://www.vagrantup.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="vagrant" width="40" height="40"/> </a> </p>
+
+            <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=eldios&show_icons=true&locale=en&layout=compact" alt="eldios" /></p>
+
+            <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=eldios&show_icons=true&locale=en" alt="eldios" /></p>
+
+            <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=eldios&" alt="eldios" /></p>
+
+            <img src="https://raw.githubusercontent.com/eldios/eldios/main/github-metrics.svg" alt="Metrics" width="100%">
+        </article>
     </div>
 
     <script>
-        // Matrix rain effect
+        // Matrix rain effect with more subtle appearance
         const canvas = document.getElementById('matrix-bg');
         const ctx = canvas.getContext('2d');
 
-        // Set canvas size
         function resizeCanvas() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -103,37 +131,34 @@
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        // Matrix characters
-        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
+        const chars = '0123456789';
         const fontSize = 14;
         const columns = canvas.width/fontSize;
         const drops = [];
 
-        // Initialize drops
         for(let x = 0; x < columns; x++) {
             drops[x] = 1;
         }
 
         function draw() {
-            // Add semi-transparent black rectangle to create fade effect
             ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            ctx.fillStyle = '#0F0';
+            ctx.fillStyle = 'rgba(0, 255, 0, 0.3)'; // More transparent green
             ctx.font = fontSize + 'px monospace';
 
             for(let i = 0; i < drops.length; i++) {
                 const text = chars[Math.floor(Math.random() * chars.length)];
                 ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
-                if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                if(drops[i] * fontSize > canvas.height && Math.random() > 0.99) {
                     drops[i] = 0;
                 }
                 drops[i]++;
             }
         }
 
-        setInterval(draw, 33);
+        setInterval(draw, 50);
     </script>
 </body>
 </html>
